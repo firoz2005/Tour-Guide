@@ -17,7 +17,7 @@ CORS(app)
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY") or os.getenv("google_api_key")
 MURF_API_KEY = os.getenv("MURF_API_KEY") or os.getenv("murf_api_key")
-GEMINI_MODELS = ["gemini-3.1-flash", "gemini-3.6-flash"]
+GEMINI_MODELS = ["gemini-3.1-flash", "gemini-3.5-flash"]
 
 client = genai.Client(api_key=GOOGLE_API_KEY) if GOOGLE_API_KEY else None
 
